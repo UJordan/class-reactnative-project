@@ -32,10 +32,10 @@ const AboutScreen = () => {
                     </Text>
                 </Card.Title>
                 <Card.Divider />
-                {PARTNERS.map((partner) => {
+                {partners.map((partner) => {
                     return (
                         <ListItem key={partner.id}>
-                            <Avatar round source={partner.image} />
+                            <Avatar rounded source={partner.image} />
                             <ListItem.Content>
                                 <ListItem.Title>{partner.name}</ListItem.Title>
                                 <ListItem.Subtitle>{partner.description}</ListItem.Subtitle>
