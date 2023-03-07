@@ -25,7 +25,6 @@ const CampsiteInfoScreen = ({ route }) => {
             campsiteId: campsite.id
         };
         dispatch(postComment(newComment));
-        setShowModal(!showModal)
     };
 
     const resetForm = () => {
@@ -104,12 +103,10 @@ const CampsiteInfoScreen = ({ route }) => {
                         value={text} />
                     <View style={{margin: 10}}>
                         <Button title='Submit' color='#5637DD' onPress={() => {handleSubmit(); setShowModal(!showModal); resetForm();}}>
-
                         </Button>
                     </View>
                     <View style={{margin: 10}}>
                         <Button color='#808080'  title='cancel' onPress={() => {setShowModal(!showModal); resetForm();}}>
-
                         </Button>
                     </View>
                 </View>
