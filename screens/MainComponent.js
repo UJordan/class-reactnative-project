@@ -191,7 +191,7 @@ const DirectoryNavigator = () => {
         >
             <Stack.Screen
                 name='Directory'
-                component={DirectoryScreen}
+                component={DirectoryScreen}x
                 options={({ navigation }) => ({
                     title: 'Campsite Directory',
                     headerLeft: () => (
