@@ -146,9 +146,9 @@ const RegisterTab = () => {
                 allowsEditing: true,
                 aspect: [1, 1]
             });
-            if (capturedImage.assets) {
-                console.log(capturedImage.assets[0]);
-                setImageUrl(capturedImage.assets[0].uri);
+            if (!capturedImage.cancelled) {
+                console.log(capturedImage);
+                setImageUrl(capturedImage.uri);
             }
         }
     };
